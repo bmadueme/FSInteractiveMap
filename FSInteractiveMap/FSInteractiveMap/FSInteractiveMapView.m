@@ -33,7 +33,7 @@
 - (void)setDefaultParameters
 {
     self.fillColor = [UIColor colorWithWhite:0.85 alpha:1];
-    self.strokeColor = [UIColor colorWithWhite:0.6 alpha:1];
+    self.strokeColor = [UIColor whiteColor];
 }
 
 #pragma mark - SVG map loading
@@ -60,7 +60,7 @@
         
         // Setting CAShapeLayer properties
         shapeLayer.strokeColor = self.strokeColor.CGColor;
-        shapeLayer.lineWidth = 0.5;
+        shapeLayer.lineWidth = 0.8;
         
         if(path.fill) {
             if(colorsDict && [colorsDict objectForKey:path.identifier]) {
